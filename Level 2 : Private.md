@@ -26,3 +26,13 @@ Ex: Select `1` from trolls and select `-100` Megusta.
 Type injection query `" or "a"="a` to the text field and click *Get this user* button.
 
 ###7. Session Management Challenge One
+To solve the challenge, user have to override the *checksum*.
+1. get the cookie checksum
+2. decode it using base64
+3. change the plain text as `userRole=administrator`
+4. encode the edited plain text using base64
+5. get the new value
+6. send the http request using newly generated checksum value
+
+###7. Failure To Restrict URL Access Challenge 1
+
